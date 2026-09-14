@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, observerOptions);
+  const track = document.getElementById('carousel-track');
+  const prev = document.getElementById('carousel-prev');
+  const next = document.getElementById('carousel-next');
 
-  document.querySelectorAll('.skill-card, .project-card, .timeline-item, .stat').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-  });
+  if (!track) return;
+
+  const slides = track.children;
+  let index = 0;
+
+  function goTo(i) {
+    index = (i + slides.length) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prev.addEventListener('click', () => goTo(index - 1));
+  next.addEventListener('click', () => goTo(index + 1));
 });
