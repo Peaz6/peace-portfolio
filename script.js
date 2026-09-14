@@ -1,18 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const track = document.getElementById('carousel-track');
-  const prev = document.getElementById('carousel-prev');
-  const next = document.getElementById('carousel-next');
+  const views = document.querySelectorAll('.view');
+  let busy = false;
 
-  if (!track) return;
+  function show(id) {
+    const next = document.getElementById(id);
+    const current = document.querySelector('.view.active');
+    if (!next || busy || next === current) return;
 
-  const slides = track.children;
-  let index = 0;
+    busy = true;
+    current.classList.add('leaving');
 
-  function goTo(i) {
-    index = (i + slides.length) % slides.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
+    setTimeout(() => {
+      current.classList.remove('active', 'leaving');
+      next.classList.add('active');
+      window.scrollTo(0, 0);
+      busy = false;
+    }, 350);
   }
 
-  prev.addEventListener('click', () => goTo(index - 1));
-  next.addEventListener('click', () => goTo(index + 1));
+  views.forEach(view => {
+    view.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const id = link.getAttribute('href').slice(1);
+        if (document.getElementById(id)) {
+          event.preventDefault();
+          show(id);
+        }
+      });
+    });
+  });
 });
