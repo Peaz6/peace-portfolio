@@ -52,6 +52,7 @@ body {
 }
 
 .hero-name {
+  font-family: 'ObelixPro', 'Inter', sans-serif;
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 700;
   line-height: 1.05;
