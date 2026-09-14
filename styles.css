@@ -118,6 +118,10 @@ body {
   margin-bottom: 40px;
 }
 
+.btn-stack a {
+  width: 240px;
+}
+
 /* Buttons */
 .btn-rabbit {
   display: inline-block;
