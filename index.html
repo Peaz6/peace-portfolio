@@ -8,218 +8,144 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero" id="hero">
-    <div class="hero-content">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-name">Peace Hkaung Lwan</h1>
-      <p class="hero-role">Student & Developer</p>
-      <p class="hero-desc">3rd Year Computer Science Student at Krirk University</p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <div class="profile-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-          <circle cx="12" cy="7" r="4"/>
-        </svg>
-        <span class="profile-label">Your Photo</span>
-      </div>
-    </div>
-  </header>
+  <div class="content">
 
-  <section class="section" id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-      <div class="about-text">
-        <p>I'm a 3rd year student at Krirk University, passionate about software development and technology. I'm currently building my skills in Python and exploring various areas of computer science.</p>
-        <p>I enjoy solving problems through code and am always looking for opportunities to learn and grow as a developer.</p>
+    <header class="hero" id="hero">
+      <p class="hero-intro">Hi, my name is</p>
+      <h1 class="hero-name">Peace Hkaung Lwan.</h1>
+      <h2 class="hero-tagline">I build things for the web.</h2>
+      <p class="hero-desc">I'm a 3rd year student at Krirk University focused on Python and software development. I'm currently learning to turn ideas into clean, useful projects.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+        <a href="#projects" class="btn-outline">View My Work</a>
       </div>
-      <div class="about-stats">
-        <div class="stat">
-          <span class="stat-number">3rd</span>
-          <span class="stat-label">Year Student</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">1+</span>
-          <span class="stat-label">Language</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">3+</span>
-          <span class="stat-label">Projects</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="section section-dark" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card active">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-          </svg>
+    <section class="section" id="about">
+      <h2 class="section-heading"><span class="num">01.</span>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hello! I'm Peace Hkaung Lwan, a student building my foundation in computer science at Krirk University. I'm passionate about learning how technology works and how to build useful things with it.</p>
+          <p>Right now I'm focusing on Python, learning to write clean code, and exploring where my interests lie — from scripting and automation to web development.</p>
+          <p>This portfolio is a work in progress, just like my skillset. Placeholder content will be replaced as I grow as a developer.</p>
         </div>
-        <h3>Python</h3>
-        <p>Current skill level: Learning</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 35%"></div></div>
-      </div>
-      <div class="skill-card placeholder">
-        <div class="skill-icon">
+        <div class="profile-placeholder">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8"/><path d="M8 12h8"/>
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
           </svg>
+          <span class="profile-label">Your Photo</span>
         </div>
-        <h3>Skill #2</h3>
-        <p>Add your next skill here</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div>
       </div>
-      <div class="skill-card placeholder">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8"/><path d="M8 12h8"/>
-          </svg>
-        </div>
-        <h3>Skill #3</h3>
-        <p>Add your next skill here</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div>
-      </div>
-      <div class="skill-card placeholder">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8"/><path d="M8 12h8"/>
-          </svg>
-        </div>
-        <h3>Skill #4</h3>
-        <p>Add your next skill here</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card placeholder">
-        <div class="project-image">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>
-          </svg>
+    <section class="section" id="skills">
+      <h2 class="section-heading"><span class="num">02.</span>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card active">
+          <h3 class="skill-name">Python</h3>
+          <p>Currently learning — fundamentals, clean code, and building simple projects.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 35%"></div></div>
         </div>
-        <div class="project-info">
-          <h3>Project #1</h3>
-          <p>Describe your first project here. What did you build? What technologies did you use?</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Placeholder</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link">Source Code</a>
-            <a href="#" class="project-link">Live Demo</a>
-          </div>
+        <div class="skill-card placeholder">
+          <h3 class="skill-name">Skill #2</h3>
+          <p>Add your next skill here.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div>
         </div>
-      </div>
-      <div class="project-card placeholder">
-        <div class="project-image">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>
-          </svg>
+        <div class="skill-card placeholder">
+          <h3 class="skill-name">Skill #3</h3>
+          <p>Add your next skill here.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div>
         </div>
-        <div class="project-info">
-          <h3>Project #2</h3>
-          <p>Describe your second project here. What problem does it solve? What did you learn?</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Placeholder</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link">Source Code</a>
-            <a href="#" class="project-link">Live Demo</a>
-          </div>
+        <div class="skill-card placeholder">
+          <h3 class="skill-name">Skill #4</h3>
+          <p>Add your next skill here.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div>
         </div>
       </div>
-      <div class="project-card placeholder">
-        <div class="project-image">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>
-          </svg>
-        </div>
-        <div class="project-info">
-          <h3>Project #3</h3>
-          <p>Describe your third project here. This could be a school project or a personal experiment.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Placeholder</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link">Source Code</a>
-            <a href="#" class="project-link">Live Demo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section-dark" id="education">
-    <h2 class="section-title">Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2023 - Present</span>
-          <h3>Krirk University</h3>
-          <p>Bachelor's Degree in Computer Science (3rd Year)</p>
+    <section class="section" id="projects">
+      <h2 class="section-heading"><span class="num">03.</span>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card placeholder">
+          <div class="project-info">
+            <h3 class="project-title">Project #1</h3>
+            <p>Describe your first project here. What did you build? What did you learn?</p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Placeholder</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-underline">Source Code</a>
+              <a href="#" class="link-underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card placeholder">
+          <div class="project-info">
+            <h3 class="project-title">Project #2</h3>
+            <p>Describe your second project here. What problem does it solve?</p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Placeholder</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-underline">Source Code</a>
+              <a href="#" class="link-underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card placeholder">
+          <div class="project-info">
+            <h3 class="project-title">Project #3</h3>
+            <p>Describe your third project here. A school project or personal experiment?</p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Placeholder</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-underline">Source Code</a>
+              <a href="#" class="link-underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-heading"><span class="num">04.</span>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <p class="timeline-date">2023 — Present</p>
+          <h3 class="timeline-title">Krirk University</h3>
+          <p class="timeline-subtitle">Bachelor's Degree in Computer Science — 3rd Year</p>
           <p class="timeline-desc">Currently pursuing my degree with a focus on software development and computer science fundamentals.</p>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot placeholder"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2020 - 2023</span>
-          <h3>High School</h3>
-          <p>Your High School Name</p>
+        <div class="timeline-item">
+          <div class="timeline-marker placeholder"></div>
+          <p class="timeline-date">2020 — 2023</p>
+          <h3 class="timeline-title">High School</h3>
+          <p class="timeline-subtitle">Your High School Name</p>
           <p class="timeline-desc">Add your high school information here.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="contact">
-    <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-content">
-      <p class="contact-text">I'm always open to new opportunities and conversations. Feel free to reach out!</p>
-      <div class="contact-links">
-        <a href="mailto:your.email@example.com" class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-          </svg>
-          <span>your.email@example.com</span>
-        </a>
-        <a href="https://github.com/Peaz6" target="_blank" class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-            <path d="M9 18c-4.51 2-5-2-7-2"/>
-          </svg>
-          <span>GitHub</span>
-        </a>
-        <a href="#" class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-          </svg>
-          <span>LinkedIn</span>
-        </a>
+    <section class="section" id="contact">
+      <h2 class="section-heading"><span class="num">05.</span>Contact</h2>
+      <div class="contact-content">
+        <p class="contact-text">I'm always open to new opportunities and conversations. My inbox is open — feel free to reach out!</p>
+        <a href="mailto:your.email@example.com" class="btn-primary contact-btn">Say Hello</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <p>&copy; 2026 Peace Hkaung Lwan. Built with HTML, CSS & JS.</p>
-  </footer>
+    <footer class="footer">
+      <p>Designed & built by Peace Hkaung Lwan.</p>
+    </footer>
 
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
