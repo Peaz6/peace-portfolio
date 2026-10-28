@@ -39,18 +39,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
-
-        <script>
-            (function () {
-                try {
-                    var stored = localStorage.getItem('theme');
-                    var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-                    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-                } catch (error) {
-                    document.documentElement.dataset.theme = 'light';
-                }
-            })();
-        </script>
     </head>
 
     <body>
@@ -161,12 +149,6 @@
                 </div>
             </footer>
         </div>
-
-        <template id="theme-toggle-template">
-            <button type="button" class="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode">
-                <span class="theme-toggle__label">Dark</span>
-            </button>
-        </template>
 
         <script src="script.js"></script>
     </body>

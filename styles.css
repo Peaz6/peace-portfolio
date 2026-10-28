@@ -5,24 +5,6 @@
 }
 
 :root {
-  --bg: #ededed;
-  --panel: #ffffff;
-  --panel-2: #f5f5f5;
-  --ink: #0a0a0a;
-  --muted: #6f6f6f;
-  --shade: #d6d6d6;
-  --shadow: #0a0a0a;
-  --shadow-soft: rgba(0, 0, 0, 0.22);
-  --grid: rgba(0, 0, 0, 0.045);
-  --scan: rgba(0, 0, 0, 0.035);
-  --pixel: 4px;
-  --font-display: 'Press Start 2P', 'Courier New', monospace;
-  --font-body: 'VT323', 'Courier New', monospace;
-  --font: var(--font-display);
-  --pad-col: 44px 24px;
-}
-
-html[data-theme='dark'] {
   color-scheme: dark;
   --bg: #0b0b0b;
   --panel: #151515;
@@ -34,6 +16,11 @@ html[data-theme='dark'] {
   --shadow-soft: rgba(255, 255, 255, 0.1);
   --grid: rgba(255, 255, 255, 0.055);
   --scan: rgba(255, 255, 255, 0.03);
+  --pixel: 4px;
+  --font-display: 'Press Start 2P', 'Courier New', monospace;
+  --font-body: 'VT323', 'Courier New', monospace;
+  --font: var(--font-display);
+  --pad-col: 44px 24px;
 }
 
 html {
@@ -94,7 +81,6 @@ body::before {
 }
 
 .main {
-  position: relative;
   background: var(--panel);
   border: var(--pixel) solid var(--ink);
   border-radius: 0;
@@ -143,58 +129,6 @@ body::before {
 :focus-visible {
   outline: var(--pixel) solid var(--ink);
   outline-offset: 3px;
-}
-
-/* Theme toggle */
-.theme-toggle {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  z-index: 3;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-width: 84px;
-  padding: 9px 12px;
-  font-family: var(--font-display);
-  font-size: 10px;
-  line-height: 1;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink);
-  background: var(--panel);
-  border: 3px solid var(--ink);
-  border-radius: 0;
-  box-shadow: 4px 4px 0 0 var(--shadow);
-  cursor: pointer;
-  transition:
-    transform 0.08s steps(2, end),
-    box-shadow 0.08s steps(2, end),
-    background-color 0.08s steps(2, end),
-    color 0.08s steps(2, end);
-}
-
-.theme-toggle::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: currentColor;
-  box-shadow: 2px 2px 0 0 currentColor;
-}
-
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
-  color: var(--panel);
-  background: var(--ink);
-  box-shadow: 2px 2px 0 0 var(--shadow);
-  transform: translate(2px, 2px);
-  outline: var(--pixel) solid var(--ink);
-  outline-offset: 3px;
-}
-
-.theme-toggle__label {
-  pointer-events: none;
 }
 
 
@@ -621,14 +555,6 @@ footer p {
 
   .btn-stack {
     margin-bottom: 44px;
-  }
-
-  .theme-toggle {
-    top: 10px;
-    right: 10px;
-    min-width: 0;
-    padding: 8px 9px;
-    font-size: 9px;
   }
 
   .btn-stack a {
